@@ -58,6 +58,7 @@ class Book extends React.Component{
 
 
     render(){
+        // eslint-disable-next-line array-callback-return
         const sortedBooks = this.state.data.sort((a, b) => {
             if ((this.state.sort) === 'newest'){
                 return parseInt(b.volumeInfo.publishedDate.substring(0,4))-parseInt(a.volumeInfo.publishedDate.substring(0,4))
